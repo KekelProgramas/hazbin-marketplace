@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Hazbin Store</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/login.css">
+    <script src="/js/components.js"></script>
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <div id="header-component"></div>
+
+    <!-- CONTAINER DE LOGIN -->
+    <section class="login-section">
+        <div class="login-container">
+            
+            <!-- FORMULÁRIO DE LOGIN -->
+            <div class="login-box">
+                <div class="login-header">
+                    <h1>Bem-vindo de volta</h1>
+                    <p>Entre no reino profano</p>
+                </div>
+
+                <form class="login-form">
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" placeholder="seu@email.com" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="senha">Senha</label>
+                        <input type="password" id="senha" placeholder="••••••••" required>
+                    </div>
+
+                    <div class="form-options">
+                        <label class="checkbox-label">
+                            <input type="checkbox">
+                            <span>Lembrar de mim</span>
+                        </label>
+                        <a href="#" class="esqueci-senha">Esqueci minha senha</a>
+                    </div>
+
+                    <button type="submit" class="btn-login">Entrar no Portal</button>
+                </form>
+
+                <div class="divider">
+                    <span>ou continue com</span>
+                </div>
+
+                <div class="social-login">
+                    <button class="btn-social google">
+                        <span>🔮</span>
+                        Google
+                    </button>
+                    <button class="btn-social facebook">
+                        <span>👁️</span>
+                        Facebook
+                    </button>
+                </div>
+
+                <div class="registro-link">
+                    <p>Ainda não possui uma conta? <a href="#registro">Criar conta</a></p>
+                </div>
+            </div>
+
+            <!-- PAINEL LATERAL -->
+            <div class="login-side">
+                <div class="side-content">
+                    <h2>Junte-se ao Culto</h2>
+                    <p>Acesse rituais exclusivos, grimórios raros e criaturas místicas disponíveis apenas para membros iniciados.</p>
+                    
+                    <div class="benefits">
+                        <div class="benefit-item">
+                            <span class="benefit-icon"><img src="/img/vela.svg" alt=""></span>
+                            <div>
+                                <h3>Rituais Exclusivos</h3>
+                                <p>Acesso a práticas secretas</p>
+                            </div>
+                        </div>
+
+                        <div class="benefit-item">
+                            <span class="benefit-icon"><img src="/img/livro.svg" alt=""></span>
+                            <div>
+                                <h3>Biblioteca Proibida</h3>
+                                <p>Grimórios e conhecimento oculto</p>
+                            </div>
+                        </div>
+
+                        <div class="benefit-item">
+                            <span class="benefit-icon"><img src="/img/ovo.svg" alt=""></span>
+                            <div>
+                                <h3>Criaturas Raras</h3>
+                                <p>Invocações especiais</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mystical-ornament">
+                        <div class="pentagram">⛤</div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <div id="footer-component"></div>
+
+    <div class="footer-bottom">
+        <p>© 2025 Hazbin Todos os direitos reservados.</p>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loja - Hazbin Store</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/loja.css">
+    <script src="/js/components.js"></script>
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <div id="header-component"></div>
+
+    <!-- TÍTULO DA LOJA -->
+    <section class="loja-hero">
+        <h1>Seu Carrinho Profano</h1>
+        <p>Revise seus itens místicos antes de finalizar o ritual de compra</p>
+    </section>
+
+    <!-- CARRINHO -->
+    <section class="carrinho-container">
+        <div class="carrinho-content">
+            
+            <!-- ITENS DO CARRINHO -->
+            <div class="carrinho-items">
+                <h2>Itens no Carrinho (3)</h2>
+
+                <!-- Item 1 -->
+                <div class="carrinho-item">
+                    <div class="item-image">
+                        <div class="placeholder-small">IMG</div>
+                    </div>
+                    <div class="item-info">
+                        <h3>Grimório das Sombras</h3>
+                        <p>Livro antigo de feitiços obscuros</p>
+                        <span class="item-categoria">Livros</span>
+                    </div>
+                    <div class="item-quantidade">
+                        <button class="qty-btn">-</button>
+                        <span class="qty">1</span>
+                        <button class="qty-btn">+</button>
+                    </div>
+                    <div class="item-preco">
+                        <span class="preco-item">R$ 299,00</span>
+                        <button class="btn-remover"><img src="/img/lixo.svg" alt=""></button>
+                    </div>
+                </div>
+
+                <!-- Item 2 -->
+                <div class="carrinho-item">
+                    <div class="item-image">
+                        <div class="placeholder-small">IMG</div>
+                    </div>
+                    <div class="item-info">
+                        <h3>Vela Negra Ritual</h3>
+                        <p>Conjunto com 6 velas para rituais noturnos</p>
+                        <span class="item-categoria">Rituais</span>
+                    </div>
+                    <div class="item-quantidade">
+                        <button class="qty-btn">-</button>
+                        <span class="qty">2</span>
+                        <button class="qty-btn">+</button>
+                    </div>
+                    <div class="item-preco">
+                        <span class="preco-item">R$ 89,00</span>
+                        <button class="btn-remover"><img src="/img/lixo.svg" alt=""></button>
+                    </div>
+                </div>
+
+                <!-- Item 3 -->
+                <div class="carrinho-item">
+                    <div class="item-image">
+                        <div class="placeholder-small">IMG</div>
+                    </div>
+                    <div class="item-info">
+                        <h3>Tábua Ouija Profana</h3>
+                        <p>Comunicação com o além garantida</p>
+                        <span class="item-categoria">Criaturas</span>
+                    </div>
+                    <div class="item-quantidade">
+                        <button class="qty-btn">-</button>
+                        <span class="qty">1</span>
+                        <button class="qty-btn">+</button>
+                    </div>
+                    <div class="item-preco">
+                        <span class="preco-item">R$ 449,00</span>
+                        <button class="btn-remover"><img src="/img/lixo.svg" alt=""></button>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- RESUMO DO PEDIDO -->
+            <div class="resumo-pedido">
+                <h2>Resumo do Pedido</h2>
+                
+                <div class="resumo-linha">
+                    <span>Subtotal</span>
+                    <span>R$ 926,00</span>
+                </div>
+                
+                <div class="resumo-linha">
+                    <span>Frete</span>
+                    <span>R$ 25,00</span>
+                </div>
+                
+                <div class="resumo-linha desconto">
+                    <span>Desconto Ritual</span>
+                    <span>- R$ 50,00</span>
+                </div>
+                
+                <div class="resumo-divider"></div>
+                
+                <div class="resumo-total">
+                    <span>Total</span>
+                    <span>R$ 901,00</span>
+                </div>
+
+                <button class="btn-finalizar">Finalizar Compra</button>
+                
+                <button class="btn-continuar" onclick="window.location.href='index.html'">Continuar Comprando</button>
+
+                <div class="cupom-box">
+                    <input type="text" placeholder="Código do cupom profano">
+                    <button class="btn-cupom">Aplicar</button>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- PRODUTOS RELACIONADOS -->
+    <section class="produtos">
+        <h2>Você Também Pode Gostar</h2>
+
+        <div class="produtos-grid">
+            <div class="produto-card">
+                <div class="placeholder">Placeholder</div>
+                <h3>Produto</h3>
+                <p>Descrição Descrição Descrição</p>
+                <span class="preco">R$00,00</span>
+                <button>COMPRAR</button>
+            </div>
+
+            <div class="produto-card">
+                <div class="placeholder">Placeholder</div>
+                <h3>Produto</h3>
+                <p>Descrição Descrição Descrição</p>
+                <span class="preco">R$00,00</span>
+                <button>COMPRAR</button>
+            </div>
+
+            <div class="produto-card">
+                <div class="placeholder">Placeholder</div>
+                <h3>Produto</h3>
+                <p>Descrição Descrição Descrição</p>
+                <span class="preco">R$00,00</span>
+                <button>COMPRAR</button>
+            </div>
+
+            <div class="produto-card">
+                <div class="placeholder">Placeholder</div>
+                <h3>Produto</h3>
+                <p>Descrição Descrição Descrição</p>
+                <span class="preco">R$00,00</span>
+                <button>COMPRAR</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <div id="footer-component"></div>
+
+    <div class="footer-bottom">
+        <p>© 2025 Hazbin Todos os direitos reservados.</p>
+    </div>
+
+</body>
+</html>
